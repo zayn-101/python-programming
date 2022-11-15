@@ -52,17 +52,18 @@ print("Month\tBalance (£)")
 
 #whilst the starting balance is less than the final balance 
 
-while starting_balance < final_balance: 
+while starting_balance <= final_balance: 
 
  
 
 #the starting balance equals the starting balance times the interest rate divided by 100 and then starting balance is added on again 
 
-    starting_balance = (starting_balance * interest_rate) / 100.0 + starting_balance 
+    starting_balance = (starting_balance * interest_rate) / 100.0 + starting_balance
+    
 
 #month equals month +1     
 
-month+=1 
+    month+=1 
 
  
 
@@ -70,7 +71,7 @@ month+=1
 
 #prints month with a space and the starting balance to 2 decimal places  
 
-    print(str(month) + "\t" + "{:.2f}".format(starting_balance))  
+print(str(month) + "\t" + "{:.2f}".format(starting_balance))  
 
  
 
