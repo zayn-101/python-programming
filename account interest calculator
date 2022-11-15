@@ -1,40 +1,87 @@
-print("Account Interest Calculator") 
+#prints program name 
 
-print("---------------------------") 
-
-print() 
+print("Account Interest Calculator")  
 
  
 
-starting_balance = float(input("Please enter the starting balance> £")) 
-
-final_balance = float(input("Please enter the final balance> £")) 
-
-interest_rate = float(input("Please enter the interest rate> ")) 
+print("---------------------------")  
 
  
 
-
-
-month = 1 
+print()  
 
  
 
-print("Month\tBalance (£)") 
+  
+
+#stores variable values as floats so there can be decimals 
+
+starting_balance = float(input("Please enter the starting balance> £"))  
 
  
 
-while starting_balance <= final_balance:
+final_balance = float(input("Please enter the final balance> £"))  
 
-    starting_balance = (starting_balance * interest_rate) / 100.0 + starting_balance
-    month+=1
+ 
 
-     
+interest_rate = float(input("Please enter the interest rate> "))  
 
-    print(str(month) + "\t" + "{:.2f}".format(starting_balance)) 
+ 
 
-         
+  
 
-print() 
+ 
+
+ 
+
+#start month at 0 
+
+month = 0  
+
+ 
+
+  
+
+ 
+
+print("Month\tBalance (£)")  
+
+ 
+
+  
+
+#whilst the starting balance is less than or equal to the final balance 
+
+while starting_balance <= final_balance: 
+
+ 
+
+#the starting balance equals the starting balance times the interest rate divided by 100 and then starting balance is added on again 
+
+    starting_balance = (starting_balance * interest_rate) / 100.0 + starting_balance 
+
+#month equals month +1     
+
+month+=1 
+
+ 
+
+      
+
+#prints month with a space and the starting balance to 2 decimal places  
+
+    print(str(month) + "\t" + "{:.2f}".format(starting_balance))  
+
+ 
+
+          
+
+ 
+
+print()  
+
+ 
+
+#says how many months it will take to achieve the final balance 
 
 print("It will take " + str(month) + " months to achieve the balance £" + "{:.2f}".format(final_balance)) 
