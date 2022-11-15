@@ -1,0 +1,19 @@
+#asks user to input a year and it needs to be stored as an integer since calculations will be done on the variable 
+
+year=int(input('enter a year ')) 
+
+ 
+
+#if year is divisible by 400 and 4 it will print that the year is a leap year 
+
+if year%400==0 and year%4==0: 
+
+    print(str(year) + ' is a leap year') 
+
+ 
+
+#otherwise it will print the year is not a leap year 
+
+else: 
+
+    print(str(year) + ' is not a leap year') 
