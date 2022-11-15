@@ -1,0 +1,42 @@
+# asks user to input text and it will print it out in lower case
+input=input('enter some text ')
+print(input.lower())
+print()
+print('Analysis of Text')
+print('-'*16)
+
+#set variables equal to zero 
+vowels=0
+consonants=0
+digit=0
+whitespace=0
+punctuation_character=0
+
+#this loop will check every letter the users inputted and increase the value of variables depending on how many digits,vowels etc there are
+for i in input:
+    if i == 'a' or i == 'e' or i == 'i' or i == 'o' or i == 'u':
+        vowels += 1
+        continue
+    
+    if i=='b' or i=='c' or i=='d' or i== 'f' or i== 'g' or i=='h' or i== 'j' or i== 'k' or i=='l' or i== 'm' or i== 'n' or i== 'p' or i=='q' or i=='r' or i== 's' or i== 't' or i== 'v' or i== 'x' or i=='y' or i=='z':
+        consonants+=1
+        continue
+        
+    if i==' ':
+        whitespace+=1
+        continue
+            
+    if i=='<' or i=='>' or i=='?' or i=='/' or i==':' or i=='-' or i=='=' or i=='!' or i=='"' or i=='(' or i==')' or i=='*' or i=='^' or i=='£' or i=='.' or i=='&' or i=='%' or i==',' or i=='`' or i==';':
+        punctuation_character+=1
+        continue
+                
+    if i=='0' or i=='1' or i=='2' or i=='3' or i=='4' or i=='5' or i=='6' or i=='7' or i=='8' or i=='9':
+        digit+=1
+        
+        print('number of vowels = ' + str(vowels))
+        print('number of digits = ' + str(digit))
+        print('number of whitespaces = ' + str(whitespace))
+        print('number of consonants = ' + str(consonants))               
+        print('number of punctuation characters = ' + str(punctuation_character))
+        break
+    
