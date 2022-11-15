@@ -1,0 +1,8 @@
+from random import randint
+
+answer = randint(1, 10)
+print("guess the number game")
+print()
+print("ive thought of a number between 1 and 10. you have to guess what it is")
+
+guess = input("enter your guess >")
