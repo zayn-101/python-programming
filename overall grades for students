@@ -1,0 +1,28 @@
+#ask user to enter number of student marks and store it in the variable
+no_of_marks=int(input('enter number of student marks '))
+
+#create a list called marks 
+marks=[]
+for i in range(no_of_marks): #
+    marks.append(int(input('enter a mark ')))#depending on the number of student marks the program will ask to enter a mark a ceratin number of times and store it in the list
+    
+sum_of_marks=sum(marks)
+len_of_marks=len(marks)
+avg=sum_of_marks/len_of_marks #get average by diving the sum of marks and length of list
+
+print('The average mark is ' + str(avg))
+print('The maximum mark is ' + str(max(marks)))
+print('The minimum mark is ' + str(min(marks)))
+        
+
+print()
+
+
+marks.sort()
+for i in marks:
+    print(i) #for evry number in the list it will print it
+    if i <40:
+        print('fail')
+    if i >=40:
+        print('pass')
+        #if the number is less than 40 it will print fail but if its equal to or higher than 40 it will print pass
