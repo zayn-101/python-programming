@@ -1,0 +1,3 @@
+sentence=input('enter a sentence')
+
+print(sentence[-1::-1])
