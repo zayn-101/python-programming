@@ -1,0 +1,40 @@
+print("Account Interest Calculator") 
+
+print("---------------------------") 
+
+print() 
+
+ 
+
+starting_balance = float(input("Please enter the starting balance> £")) 
+
+final_balance = float(input("Please enter the final balance> £")) 
+
+interest_rate = float(input("Please enter the interest rate> ")) 
+
+ 
+
+
+
+month = 1 
+
+ 
+
+print("Month\tBalance (£)") 
+
+ 
+
+while starting_balance <= final_balance:
+
+    starting_balance = (starting_balance * interest_rate) / 100.0 + starting_balance
+    month+=1
+
+     
+
+    print(str(month) + "\t" + "{:.2f}".format(starting_balance)) 
+
+         
+
+print() 
+
+print("It will take " + str(month) + " months to achieve the balance £" + "{:.2f}".format(final_balance)) 
