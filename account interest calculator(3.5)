@@ -71,7 +71,7 @@ while starting_balance <= final_balance:
 
 #prints month with a space and the starting balance to 2 decimal places  
 
-print(str(month) + "\t" + "{:.2f}".format(starting_balance))  
+   print(str(month) + "\t" + "{:.2f}".format(starting_balance))  
 
  
 
