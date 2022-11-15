@@ -1,0 +1,55 @@
+import random 
+
+ 
+
+user_action = input("Enter a choice 1=rock, 2=paper, 3=scissors: ") 
+
+rock=1 
+
+paper=2 
+
+scissors=3 
+
+computer_action = random.randint(1, 3) 
+
+print(f"You chose {user_action}, computer chose {computer_action}.") 
+
+ 
+
+if user_action == computer_action: 
+
+    print("Its a tie!") 
+
+elif user_action == "1": 
+
+    if computer_action == 3: 
+
+        print("Rock smashes scissors! You win!") 
+
+    else: 
+
+        print("Paper covers rock! You lose.") 
+
+elif user_action == "2": 
+
+    if computer_action == 1: 
+
+        print("Paper covers rock! You win!") 
+
+    else: 
+
+        print("Scissors cuts paper! You lose.") 
+
+elif user_action == "3": 
+
+    if computer_action == 2: 
+
+        print("Scissors cuts paper! You win!") 
+
+    else: 
+
+        print("Rock smashes scissors! You lose.") 
+
+ 
+
+ 
