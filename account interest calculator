@@ -50,9 +50,9 @@ print("Month\tBalance (£)")
 
   
 
-#whilst the starting balance is less than or equal to the final balance 
+#whilst the starting balance is less than the final balance 
 
-while starting_balance <= final_balance: 
+while starting_balance < final_balance: 
 
  
 
