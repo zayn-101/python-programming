@@ -1,0 +1,47 @@
+#this paragraph asks the user all the needed information for the program to work such as the year and each monthly sale 
+
+year=int(input('enter the year for sales report ')) 
+
+january=float(input('enter monthly sales for january ')) 
+
+february=float(input('enter monthly sales for feb ')) 
+
+march=float(input('enter monthly sales for march ')) 
+
+april=float(input('enter monthly sales for april ')) 
+
+may=float(input('enter monthly sales for may ')) 
+
+june=float(input('enter monthly sales for june ')) 
+
+july=float(input('enter monthly sales for july ')) 
+
+august=float(input('enter monthly sales for august ')) 
+
+september=float(input('enter monthly sales for sept ')) 
+
+october=float(input('enter monthly sales for oct ')) 
+
+november=float(input('enter monthly sales for nov ')) 
+
+december=float(input('enter monthly sales for dec ')) 
+
+ 
+
+#this variable stores the total amount of sales by adding all the month variables together  
+
+totalSales = january + february + march+april+may+june+july+august+september+october +november+december 
+
+ 
+
+#this display to the user the result for total sales for the year  
+
+print('total sales for ' + str(year) + ' are ' + str(totalSales)) 
+
+ 
+
+#this calculates the average by dividing the total sales by 12 and then prints it out 
+
+average=totalSales/12 
+
+print('the average monthly sales for ' + str(year) + ' are ' + str(average)) 
