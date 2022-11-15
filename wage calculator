@@ -1,0 +1,67 @@
+# wage calculator program 
+
+print('python stores employee wage calculator program') 
+
+print() 
+
+num_hours=int(input('please enter the number of hours worked by employee>')) 
+
+sales=float(input('please enter the amount of sales for employee>£')) 
+
+ 
+
+wages=0.0 
+
+normal_hours=0 
+
+overtime_hours=0 
+
+comission= 0.0 
+
+ 
+
+if num_hours<40: 
+
+    normal_hours=num_hours 
+
+     
+
+if num_hours>=40: 
+
+    normal_hours = 40 
+
+    overtime_hours=num_hours-40 
+
+ 
+
+if sales>1.00 and sales<99.99: 
+
+    comission=sales*5.0/100.0 
+
+    #swap symbol so 99.99 is bigger than the sales 
+
+if sales>100.00 and sales<299.99: 
+
+    comission=sales*10/100.00 
+
+     
+
+if sales>300.00: 
+
+    comission = sales * 15/100.0 
+
+     
+
+wages=normal_hours*9.50+overtime_hours*(9.50*1.5)+comission 
+
+ 
+
+print() 
+
+print('number of hours worked @ normal rate = ', normal_hours, 'x £', 9.50) 
+
+print('number of hours worked @ overtime rate = ', overtime_hours, 'x £', (9.50 * 1.5)) 
+
+print('comission earned=£', comission) 
+
+print('total wage = £', wages) 
