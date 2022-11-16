@@ -1,0 +1,33 @@
+Student_id_01010101={'Student name': 'Alexander Moore', 'Course name': 'Computer Science', 'Year': 1} 
+
+Student_id_01110111={'Student name': 'Jason Marshall', 'Course name': 'CIT', 'Year': 2}
+
+Student_id_01001110={'Student name': 'Seren Hussain', 'Course name': 'BIT', 'Year': 2}
+
+Student_id_10101010={'Student name': 'Amy Harrison', 'Course name': 'BIT', 'Year': 1} 
+
+print('student database program')
+print('there are 4 students in the database')
+print()
+student_ID=str(input('enter student ID '))
+
+if student_ID== '10101010' or student_ID=='01010101' or student_ID=='01110111' or student_ID=='01001110':
+    print(student_ID + ' is in the databse')
+else:
+    print(student_ID + ' is not in the database')
+    
+if student_ID=='01010101':
+    for a,b in Student_id_01010101.items():
+        print(a,b)
+        
+if student_ID=='10101010':
+    for a,b in Student_id_10101010.items():
+        print(a,b)
+        
+if student_ID=='01110111':
+    for a,b in Student_id_01110111.items():
+        print(a,b)
+        
+if student_ID=='01001110':
+    for a,b in Student_id_01001110.items():
+        print(a,b)
