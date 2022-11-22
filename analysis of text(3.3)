@@ -33,10 +33,10 @@ for i in input:
     if i=='0' or i=='1' or i=='2' or i=='3' or i=='4' or i=='5' or i=='6' or i=='7' or i=='8' or i=='9':
         digit+=1
         
-        print('number of vowels = ' + str(vowels))
-        print('number of digits = ' + str(digit))
-        print('number of whitespaces = ' + str(whitespace))
-        print('number of consonants = ' + str(consonants))               
-        print('number of punctuation characters = ' + str(punctuation_character))
-        break
+print('number of vowels = ' + str(vowels))
+print('number of digits = ' + str(digit))
+print('number of whitespaces = ' + str(whitespace))
+print('number of consonants = ' + str(consonants))               
+print('number of punctuation characters = ' + str(punctuation_character)) 
+
     
