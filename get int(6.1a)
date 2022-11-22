@@ -1,9 +1,10 @@
-def getnumber():
+def get_int():
     number = input('Input a number ')
     while number.isdigit()==False:
-        print('\n bad input\n ')
+        print('bad input')
         number=input('enter another number ')
     else:
         return int(number)
         
-getnumber()
+get_int()
+
