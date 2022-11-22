@@ -1,0 +1,16 @@
+def get_float():
+    while True:
+        number = input('Input a decimal number ')
+        try:
+            if "." in number:
+                floatnumber = float(number)
+                print(floatnumber)
+                break
+            else:
+                print("invalid number")
+        except ValueError as err:
+            print(err)
+                
+            
+        
+get_float() 
