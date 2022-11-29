@@ -1,0 +1,14 @@
+
+#opens a document called filemarks and will append data into it so it wont remove anything
+f=open('filemarks.txt','at')
+
+#number_of_marks stores how many student marks there should be
+number_of_marks=int(input('enter how many student marks to store '))
+
+#this for loop will ask the user to enter a number a certain number of times depending on how many marks there are to store and will write it into the document on separate lines 
+for count in range(number_of_marks):
+    number = int(input('Enter a number '))
+    f.write(str(number))
+    f.write('\n')
+#closes document 
+f.close() 
